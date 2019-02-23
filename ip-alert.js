@@ -1,0 +1,1 @@
+alert("Be continuing to this page, you are giving me the right to show anonymously your position on a map!");
