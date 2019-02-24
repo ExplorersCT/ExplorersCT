@@ -4,20 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta name="description" content="Explore random pages. Family friendly content">
+    <title>Explore Random Pages</title>
+    <link rel="stylesheet" href="main.css">
     <style>
-        button {
-            background-color: #262467;
-            color: #ceb8b8;
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            font-size: 2.5em;
-            border-radius: 0 1em 0 0;
-            padding: 0.5em;
-        }
-
-        iframe {
+            iframe {
             width: 90vw;
             height: 85vh;
             position: fixed;
@@ -28,33 +19,37 @@
 </head>
 <body>
 
-    <p>Press the Explore button to start the exploration</p>
 
-    <iframe id='iframe' src="">
+    <iframe id='iframe' src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
         <p>Your browser does not support iframes.</p>
     </iframe>
+
+    
           
     
     <button id='explore-button'>Explore</button>
 
     <!-- <script src="explore.js"></script> -->
     <script>
-    var button = document.getElementById('explore-button');
+    var exploreButton = document.getElementById('explore-button');
+    var iframe = document.getElementById('iframe');
     var randomPages = [
         "https://www.youtube.com/embed/g9VjiTDbVDk",
         "https://www.youtube.com/embed/-0gED3rn2Tc",
         "https://www.youtube.com/embed/T-RtG5Z-9jQ"];
+    var randomPage = randomPages[Math.floor(Math.random()*randomPages.length)];
 
-    button.addEventListener('click', function() {
-        var randomPage = randomPages[Math.floor(Math.random()*randomPages.length)];
-        //when pressing the button, 
-        
-        //go to a random page;
-        //window.location.href = randomPage;
+    // Display a random iframe source at the first visit
+    iframe.src = randomPage;
 
+    //when pressing the Explore button
+    exploreButton.addEventListener('click', function() {
+
+        //get random page 
+        randomPage = randomPages[Math.floor(Math.random()*randomPages.length)];
+    
         //change the iframe source
-        document.getElementById('iframe').src = randomPage;
-        console.log(randomPage);
+        iframe.src = randomPage;
 
     });
     
