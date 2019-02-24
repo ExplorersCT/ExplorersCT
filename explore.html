@@ -28,7 +28,9 @@
 </head>
 <body>
 
-    <iframe id='iframe' src="https://www.twitch.tv">
+    <p>Press the Explore button to start the exploration</p>
+
+    <iframe id='iframe' src="">
         <p>Your browser does not support iframes.</p>
     </iframe>
           
@@ -38,20 +40,21 @@
     <!-- <script src="explore.js"></script> -->
     <script>
     var button = document.getElementById('explore-button');
-    var
     var randomPages = [
-        "https://www.youtube.com/",
-        "https://www.google.com/",
-        "https://www.facebook.com/"];
-    var randomPage = randomPages[Math.floor(Math.random()*randomPages.length)];
+        "https://www.youtube.com/embed/g9VjiTDbVDk",
+        "https://www.youtube.com/embed/-0gED3rn2Tc",
+        "https://www.youtube.com/embed/T-RtG5Z-9jQ"];
 
     button.addEventListener('click', function() {
+        var randomPage = randomPages[Math.floor(Math.random()*randomPages.length)];
         //when pressing the button, 
+        
         //go to a random page;
-        // window.location.href = randomPage;
+        //window.location.href = randomPage;
 
         //change the iframe source
         document.getElementById('iframe').src = randomPage;
+        console.log(randomPage);
 
     });
     
