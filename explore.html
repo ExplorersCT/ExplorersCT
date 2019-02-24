@@ -5,11 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        button {
+            background-color: #262467;
+            color: #ceb8b8;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            font-size: 2.5em;
+            border-radius: 0 1em 0 0;
+            padding: 0.5em;
+        }
+
+        iframe {
+            width: 90vw;
+            height: 85vh;
+            position: fixed;
+            top: 5vh;
+            left: 5vw;
+        }
+    </style>
 </head>
 <body>
-    
-    <button>Explore</button>
 
-    <script src="script.js"></script>
+    <iframe id='iframe' src="https://www.twitch.tv">
+        <p>Your browser does not support iframes.</p>
+    </iframe>
+          
+    
+    <button id='explore-button'>Explore</button>
+
+    <!-- <script src="explore.js"></script> -->
+    <script>
+    var button = document.getElementById('explore-button');
+    var
+    var randomPages = [
+        "https://www.youtube.com/",
+        "https://www.google.com/",
+        "https://www.facebook.com/"];
+    var randomPage = randomPages[Math.floor(Math.random()*randomPages.length)];
+
+    button.addEventListener('click', function() {
+        //when pressing the button, 
+        //go to a random page;
+        // window.location.href = randomPage;
+
+        //change the iframe source
+        document.getElementById('iframe').src = randomPage;
+
+    });
+    
+    
+    </script>
 </body>
 </html>
