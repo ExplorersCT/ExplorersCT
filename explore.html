@@ -28,37 +28,13 @@
           
     
     <button id='explore-button'>Explore</button>
-    
+
      <!-- AddToAny BEGIN -->
-     <a class="a2a_dd" href="https://www.addtoany.com/share"><button id='share-button'>Share</button></a>
+     <a class="a2a_dd" href="https://www.addtoany.com/share"><button id='share-button'>Share this page</button></a>
      <script async src="https://static.addtoany.com/menu/page.js"></script>
      <!-- AddToAny END -->
 
-    <!-- <script src="explore.js"></script> -->
-    <script>
-    var exploreButton = document.getElementById('explore-button');
-    var iframe = document.getElementById('iframe');
-    var randomPages = [
-        "https://www.youtube.com/embed/g9VjiTDbVDk",
-        "https://www.youtube.com/embed/-0gED3rn2Tc",
-        "https://www.youtube.com/embed/T-RtG5Z-9jQ"];
-    var randomPage = randomPages[Math.floor(Math.random()*randomPages.length)];
-
-    // Display a random iframe source at the first visit
-    iframe.src = randomPage;
-
-    //when pressing the Explore button
-    exploreButton.addEventListener('click', function() {
-
-        //get random page 
-        randomPage = randomPages[Math.floor(Math.random()*randomPages.length)];
+    <script src="explore.js"></script>
     
-        //change the iframe source
-        iframe.src = randomPage;
-
-    });
-    
-    
-    </script>
 </body>
 </html>
