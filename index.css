@@ -13,6 +13,7 @@ button {
     color: purple;
     font-weight: 600;
     outline: none;
+    box-shadow: 1px 1px 111px purple;
 }
 
 #explore-button {
