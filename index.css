@@ -44,7 +44,7 @@ button {
 }
 
 @keyframes example {
-    0%   {box-shadow: 0 0 65px purple, inset 0 0 1px purple;}
-    50%  {box-shadow: 0 0 141px purple, inset 0 0 2px purple;}
-    100% {box-shadow: 0 0 65px purple, inset 0 0 1px purple;}
+    0%   {box-shadow: 0 0 65px purple, inset 0 0 5px purple;}
+    50%  {box-shadow: 0 0 141px purple, inset 0 0 1px purple;}
+    100% {box-shadow: 0 0 65px purple, inset 0 0 5px purple;}
 }
