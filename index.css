@@ -4,6 +4,18 @@ body, button {
 
 body {
     text-align: center;
+    animation-name: xample;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    width: 20em;
+    margin: 0 auto;
+    border-radius: 5em; 
+}
+
+@keyframes xample {
+    0%   {box-shadow: 0 0 1px #807600, inset 0 0 4px #807600;}
+    50%  {box-shadow: 0 0 1px #807600, inset 0 0 11px #807600;}
+    100% {box-shadow: 0 0 1px #807600, inset 0 0 4px #807600;}
 }
 
 #container {
@@ -34,8 +46,8 @@ body {
 }
 
 button {
-    background: #010101;
-    padding: 0.25em;
+    background: #080101;
+    padding: 0.4em;
     border: none;
     color: #807600;
     outline: none;
@@ -43,14 +55,14 @@ button {
     font-size: 2.6em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 0.1em;
-    border-radius: 0 1em 0 0;
+    border-radius: 1em 1em 0 0;
     animation-name: example;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;    
 }
 
 @keyframes example {
-    0%   {box-shadow: 0 0 65px #807600, inset 0 0 5px #807600;}
-    50%  {box-shadow: 0 0 141px #807600, inset 0 0 1px #807600;}
-    100% {box-shadow: 0 0 65px #807600, inset 0 0 5px #807600;}
+    0%   {box-shadow: 0 0 65px #807600, inset 0 0 9px #807600;}
+    50%  {box-shadow: 0 0 141px #807600, inset 0 0 3px #807600;}
+    100% {box-shadow: 0 0 65px #807600, inset 0 0 9px #807600;}
 }
