@@ -6,29 +6,34 @@ body {
     text-align: center;
 }
 
+#container {
+    margin-top: 20vh;
+    border: 0px solid #090809;
+}
+
 .title {
     color: black;
     text-shadow: 1px 1px 111px purple;
     font-size: 3em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bold;
+    position: relative;
 }
 
 #the {
-    font-size: 2em;
-    position: fixed;
-    top: 55vh;
-    left: 43vw;
+    font-size: 1.5rem;
+    bottom: -30px;
+    left: -48px;
+    z-index: -1;
 }
 
-#ct {
-    position: fixed;
-    top: 53vh;
-    left: 52vw;
+#city {
+    bottom: -113px;
+    left: 14px;
+    z-index: -2;
 }
 
 button {
-    margin-top: 45vh;
     padding: 0.25em;
     border: none;
     color: #700470;
