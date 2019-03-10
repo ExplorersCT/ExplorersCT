@@ -13,7 +13,7 @@ body {
 
 .title {
     color: black;
-    text-shadow: 1px 1px 111px purple;
+    text-shadow: 1px 1px 111px #008033;
     font-size: 3em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bold;
@@ -34,12 +34,12 @@ body {
 }
 
 button {
-    background: #0d0a0a;
+    background: #010101;
     padding: 0.25em;
     border: none;
-    color: #700470;
+    color: #807600;
     outline: none;
-    box-shadow: 1px 1px 111px purple;
+    box-shadow: 1px 1px 111px #807600;
     font-size: 2.6em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 0.1em;
@@ -50,7 +50,7 @@ button {
 }
 
 @keyframes example {
-    0%   {box-shadow: 0 0 65px purple, inset 0 0 5px purple;}
-    50%  {box-shadow: 0 0 141px purple, inset 0 0 1px purple;}
-    100% {box-shadow: 0 0 65px purple, inset 0 0 5px purple;}
+    0%   {box-shadow: 0 0 65px #807600, inset 0 0 5px #807600;}
+    50%  {box-shadow: 0 0 141px #807600, inset 0 0 1px #807600;}
+    100% {box-shadow: 0 0 65px #807600, inset 0 0 5px #807600;}
 }
