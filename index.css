@@ -1,57 +1,52 @@
 body, button {
     background-color: black;
-}
-
-body {
     text-align: center;
-    width: 20em;
-    margin: 0 auto;
 }
 
 #container {
-    margin-top: 20vh;
+    width: 20em;
+    margin: 17vh auto;
 }
 
 .title {
     color: black;
-    text-shadow: 1px 1px 111px purple;
-    font-size: 3em;
+    text-shadow: 0 0 1em purple;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bold;
     position: relative;
 }
 
 #the {
-    font-size: 1.5rem;
-    bottom: -30px;
-    left: -48px;
+    font-size: 2.3em;
+    bottom: -1.24em;
+    left: -1.7em;
     z-index: -1;
 }
 
 #city {
-    bottom: -113px;
-    left: 14px;
+    bottom: -2.44em;
+    font-size: 4.2em;
+    left: 0.4em;
     z-index: -2;
 }
 
 button {
-    background: #000000;
     padding: 0.2em 0.4em;
     border: none;
     color: purple;
     outline: none;
-    box-shadow: 1px 1px 111px purple;
-    font-size: 2.6em;
+    box-shadow: 0 0 1.8em purple;
+    font-size: 3.6em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 0.1em;
     border-radius: 0 1em 0 0;
     animation-name: example;
-    animation-duration: 8s;
+    animation-duration: 12s;
     animation-iteration-count: infinite;    
 }
 
 @keyframes example {
-    0%   {box-shadow: 0 0 45px purple, inset 0 0 2px purple;}
-    50%  {box-shadow: 0 0 111px purple, inset 0 0 7px purple;}
-    100% {box-shadow: 0 0 45px purple, inset 0 0 2px purple;}
+    0%   {box-shadow: 0 0 0.5em purple, inset 0 0 0.1em purple;}
+    50%  {box-shadow: 0 0 1.8em purple, inset 0 0 0.3em purple;}
+    100% {box-shadow: 0 0 0.5em purple, inset 0 0 0.1em purple;}
 }

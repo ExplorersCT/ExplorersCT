@@ -1,52 +1,68 @@
 body, button {
     background-color: black;
+}
+
+body {
     text-align: center;
+    animation-name: xample;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    width: 20em;
+    margin: 0 auto;
+    border-radius: 5em; 
+}
+
+@keyframes xample {
+    0%   {box-shadow: 0 0 1px #807600, inset 0 0 4px #807600;}
+    50%  {box-shadow: 0 0 1px #807600, inset 0 0 11px #807600;}
+    100% {box-shadow: 0 0 1px #807600, inset 0 0 4px #807600;}
 }
 
 #container {
-    width: 20em;
-    margin: 17vh auto;
+    margin-top: 20vh;
+    border: 0px solid #090809;
 }
 
 .title {
     color: black;
-    text-shadow: 0 0 1em purple;
+    text-shadow: 1px 1px 111px #008033;
+    font-size: 3em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bold;
     position: relative;
 }
 
 #the {
-    font-size: 2.3em;
-    bottom: -1.24em;
-    left: -1.7em;
+    font-size: 1.5rem;
+    bottom: -30px;
+    left: -48px;
     z-index: -1;
 }
 
 #city {
-    bottom: -2.44em;
-    font-size: 4.2em;
-    left: 0.4em;
+    bottom: -113px;
+    left: 14px;
     z-index: -2;
 }
 
 button {
-    padding: 0.2em 0.4em;
+    animation-name: example;
+    animation-duration: 8s;
+    animation-iteration-count: infinite; 
+    background-color: #080101;
     border: none;
-    color: purple;
-    outline: none;
-    box-shadow: 0 0 1.8em purple;
-    font-size: 3.6em;
+    border-radius: 1em 1em 0.1em 0.1em;   
+    box-shadow: 1px 1px 111px #807600;
+    color: #807600;
+    font-size: 2.6em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 0.1em;
-    border-radius: 0 1em 0 0;
-    animation-name: example;
-    animation-duration: 12s;
-    animation-iteration-count: infinite;    
+    outline: none;
+    padding: 0.4em;
 }
 
 @keyframes example {
-    0%   {box-shadow: 0 0 0.5em purple, inset 0 0 0.1em purple;}
-    50%  {box-shadow: 0 0 1.8em purple, inset 0 0 0.3em purple;}
-    100% {box-shadow: 0 0 0.5em purple, inset 0 0 0.1em purple;}
+    0%   {box-shadow: 0 0 65px #807600, inset 0 0 9px #807600;}
+    50%  {box-shadow: 0 0 141px #807600, inset 0 0 3px #807600;}
+    100% {box-shadow: 0 0 65px #807600, inset 0 0 9px #807600;}
 }
