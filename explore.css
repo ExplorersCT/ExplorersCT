@@ -21,6 +21,14 @@ body {
 #container {
     margin-top: 20vh;
     border: 0px solid #090809;
+    animation-name: fade-in;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fade-in {
+    0%   {opacity: 0;}
+    100% {display: 1;}
 }
 
 .title {
@@ -47,6 +55,7 @@ body {
 
 button {
     animation-name: example;
+    animation-delay: 5s;
     animation-duration: 8s;
     animation-iteration-count: infinite; 
     background-color: #080101;
