@@ -7,7 +7,7 @@ body, button {
     width: 20em;
     margin: 17vh auto;
     animation-name: fade-in;
-    animation-duration: 20s;
+    animation-duration: 15s;
     animation-iteration-count: 1;
 }
 
@@ -43,13 +43,13 @@ button {
     border: none;
     color: purple;
     outline: none;
-    box-shadow: 0 0 1.8em purple;
+    box-shadow: 0 0 0.1em purple, inset 0 0 0.1em purple;
     font-size: 3.6em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 0.1em;
     border-radius: 0 1em 0 0;
     animation-name: example;
-    animation-delay: 21s;
+    animation-delay: 16s;
     animation-duration: 12s;
     animation-iteration-count: infinite;    
 }
