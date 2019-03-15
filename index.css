@@ -43,7 +43,7 @@ button {
     border: none;
     color: purple;
     outline: none;
-    box-shadow: 0 0 0.1em purple, inset 0 0 0.1em purple;
+    box-shadow: 0 0 0.5em purple, inset 0 0 0.1em purple;
     font-size: 3.6em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 0.1em;
