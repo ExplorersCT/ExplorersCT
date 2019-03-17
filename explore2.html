@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Explorers City - A mysterious place!</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="explore.css">
 </head>
 
 <body>
@@ -24,26 +24,10 @@
     <div id="container">
         <p class="title" id='city'>City</p>
         <p class="title" id='the'>the</p>
-        <button onclick="fadeOut()">Explore</button>
+        <a href="/explore">
+            <button>Explore</button>
+        </a>
     </div>
-
-    <script>
-        var fadeOut = function() {
-            var container = document.getElementById('container');
-            var unit = 1;                        
-
-            setInterval(function () {
-                unit -= 0.2;
-                
-                container.style.opacity = unit; //For real browsers;
-                container.style.filter = "alpha(opacity=" + unit + ")"; //For IE;
-            }, 100);
-
-            setTimeout(function () {
-                window.location.href = "/explore.html";
-            }, 1000);
-        };        
-    </script>
 
 </body>
 

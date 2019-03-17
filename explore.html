@@ -22,12 +22,27 @@
 <body>
 
     <div id="container">
-        <p class="title" id='city'>City</p>
-        <p class="title" id='the'>the</p>
-        <a href="/explore">
-            <button>Explore</button>
-        </a>
+        
     </div>
+    <button onclick="fadeOut()">Explore</button>
+
+    <script>
+        var fadeOut = function() {
+            var container = document.getElementById('container');
+            var unit = 1;                        
+
+            setInterval(function () {
+                unit -= 0.2;
+                
+                container.style.opacity = unit; //For real browsers;
+                container.style.filter = "alpha(opacity=" + unit + ")"; //For IE;
+            }, 100);
+
+            setTimeout(function () {
+                window.location.href = "/explore";
+            }, 1000);
+        };        
+    </script>
 
 </body>
 
