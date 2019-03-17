@@ -37,11 +37,11 @@
                 
                 container.style.opacity = unit; //For real browsers;
                 container.style.filter = "alpha(opacity=" + unit + ")"; //For IE;
+            }, 100);
 
-                if (unit <= 0) {
-                    window.location.href = "/explore.html";
-                }
-            }, 100)
+            setTimeout(function () {
+                window.location.href = "/explore";
+            }, 1000);
         };        
     </script>
 
