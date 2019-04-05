@@ -1,5 +1,6 @@
 body, button {
     background-color: #000101;
+    font-family: Impact, Helvetica, fantasy, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
 }
 
@@ -19,7 +20,6 @@ body, button {
 .title {
     color: black;
     text-shadow: 0 0 1em purple;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: bold;
     position: relative;
 }
@@ -45,7 +45,6 @@ button {
     outline: none;
     box-shadow: 0 0 0.5em purple, inset 0 0 0.1em purple;
     font-size: 3.6em;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 0.1em;
     border-radius: 0 1em 0 0;
     animation-name: example;
